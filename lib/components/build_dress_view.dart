@@ -30,7 +30,7 @@ Container _buildTitle() {
 
 Container _buildListView(WeatherLevel weatherLevel) {
   List<Dress> dressResult = [];
-  // 드레스 리스트의 요소들 중 날씨 레벨이 받아온 날씨 레벨에 포함된 요소를 리스트에 집어넣기
+  // 현재 온도로 결정된 날씨 레벨이 드레스 리스트 요소의 날씨 레벨에 포함된다면 dressResult 리스트에 집어넣기
   for (Dress dress in dressList) {
     if (dress.weatherLevel.contains(weatherLevel)) {
       dressResult.add(dress);

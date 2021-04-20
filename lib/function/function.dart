@@ -2,8 +2,8 @@ import 'package:flutter_weather_app/models/wheather_level.dart';
 
 class FunctionLib{
 
-  // 현재 시간에 따라서 시간대 정해주기
-  String getCurrentDateTime(){
+  // 현재 시간에 따라서 백그라운드 정해주기
+  String getBg(){
     String backgroundImagePath;
 
     var now = DateTime.now();

@@ -31,7 +31,7 @@ class _WeatherScreenState extends State<WeatherScreen> {
     temp = temp2.round();
     cityName = weatherData['name'];
     description = weatherData['weather'][0]['description'];
-    backgroundImagePath = functionLib.getCurrentDateTime(); // 현재 시간에 따라서 백그라운드 정해주기
+    backgroundImagePath = functionLib.getBg(); // 현재 시간에 따라서 백그라운드 정해주기
     weatherLevel = functionLib.getWeatherLevel(temp); // 현재 온도에 따라서 추천 드레스 달라지기
   }
 

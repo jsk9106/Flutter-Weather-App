@@ -1,5 +1,6 @@
 import 'package:geolocator/geolocator.dart';
 
+// 사용자 위치 정보 가져오기
 class MyLocation{
   double latitude2;
   double longitude2;
